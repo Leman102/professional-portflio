@@ -61,13 +61,21 @@
 
 /* footer section */
 footer {
-    padding: 20px 35px 20px 35px;
-    background: #4276ee;
+    padding: 10px 35px 10px 35px;
+    background-image: radial-gradient(ellipse,lightblue, #4276ee);;
     color: white;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  footer a{
+      text-decoration: none;
+      color: black;
+      font-size: 25px;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      font-style: italic;
   }
 
   /* Intro section */
