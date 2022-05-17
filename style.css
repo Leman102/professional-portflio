@@ -153,35 +153,75 @@ section h3{
     font-weight: bold;
 }
 
-/* .my-work-description {
+/* my work section */
+
+.my-work-description {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 98%;
     font-size: 22px;
     flex-wrap: wrap;
     margin: 0 auto 0 auto;
-} */
+}
 
 /* .design1 {
     padding: 10px;
 } */
-.design h4 {
-    font-size: 40px;
-    flex: 1 30%;
-}
-.content {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
+
 
 .design {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
+    padding-bottom: 10px;
+    width: 55%;
+}
+.design1 {
+    padding-bottom: 10px;
+    width: 44%;
+}
+
+.design1 img{
+    width: 100%;
+}
+
+/* .content {
+    flex: 2 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: start;
+} */
+
+.design h4, .design1 h4 {
+    font-size: 45px;
+    text-align: center;
+}
+
+/* .run-buddy {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    text-align: left; */
+    /* background-color: transparent;
+    background-image: url("./img/run-buddy.png");
+    background-size: cover; */
+    /* background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed; 
+}*/
+
+.content2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+   
+}
+.skill {
+    background-color: navy;
+    margin-bottom:  10px;
+    width: 45%;
+    text-align: center;
+    color: white;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
 }
