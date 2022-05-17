@@ -162,12 +162,8 @@ section h3{
     font-size: 22px;
     flex-wrap: wrap;
     margin: 0 auto 0 auto;
+    line-height: 1.5;
 }
-
-/* .design1 {
-    padding: 10px;
-} */
-
 
 .design {
     padding-bottom: 10px;
@@ -178,22 +174,43 @@ section h3{
     width: 44%;
 }
 
-.design1 img{
-    width: 100%;
-}
-
-/* .content {
-    flex: 2 50%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: start;
-} */
-
 .design h4, .design1 h4 {
     font-size: 45px;
     text-align: center;
 }
+
+.run-buddy img {
+    width: 100%;
+}
+
+.wip-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+}
+
+.wip-content img{
+    width: 30%;
+}
+
+/* .wip-content img{
+    background-color: #4276ee;
+    margin-bottom:  10px;
+    width: 40%;
+    text-align: center;
+    color: white;
+    padding-bottom:  5px;
+} */
+
+
+
+/* .run-buddy {
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    text-align: left;
+} */
 
 /* .run-buddy {
     width: 50%;
@@ -214,14 +231,22 @@ section h3{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-   
 }
 .skill {
-    background-color: navy;
+    background-color: #4276ee;
     margin-bottom:  10px;
     width: 45%;
     text-align: center;
     color: white;
     flex-wrap: wrap;
-    padding-bottom: 20px;
+    padding-bottom:  5px;
+}
+
+.design h5{
+    font-size: 22px;
+}
+
+.design p {
+    padding: 5px;
+    font-size: 18px;
 }
