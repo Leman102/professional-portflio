@@ -1,24 +1,40 @@
+/*add custom properties*/
+:root {
+    --primary-color: #53565a;
+    --secondary-color: #4276ee ;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
 
-  body {
+body {
     background-color: white;
     font-family:  Helvetica, Arial, sans-serif;
     color: black;
-  }
+}
 
   /*header section */
-  header {
-      color: white;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      background-image: radial-gradient(ellipse,lightblue, #4276ee);
-  }
+header {
+    padding: 10px 20px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    /* "stick" the header */
+    position: sticky;
+    top: 0;
+    background-image: url("./img/matrix.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    /*keep this element on top of all the other ones */
+    z-index: 9999;
+}
 
   header h1{
       font-weight: bold;
@@ -52,9 +68,9 @@
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   header nav ul li a:hover {
-    background: rgb(51, 195, 252);
-    color: black;
-    font-weight: normal;
+    background-image: linear-gradient(to bottom right,skyblue, rgb(11, 11, 65));
+    color: white;
+    font-weight: bold;
     border-radius: 15px;
     text-shadow: none;
   }
@@ -62,20 +78,14 @@
 /* footer section */
 footer {
     padding: 10px 35px 10px 35px;
-    background-image: radial-gradient(ellipse,lightblue, #4276ee);;
+    background-color: rgb(11, 11, 65);
+    /* background-image: linear-gradient(to bottom right,skyblue, rgb(11, 11, 65)); */
     color: white;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-  }
-
-  footer a{
-      text-decoration: none;
-      color: black;
-      font-size: 25px;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      font-style: italic;
   }
 
   /* Intro section */
@@ -105,27 +115,11 @@ footer {
 }
 
 .intro img{
-    width: 20%;
+    width: 15%;
     border-radius: 30%;
 }
 
-a.button {
-    text-decoration: none;
-    background-color: #4276ee;
-    color: white;
-    padding: 15px 10px;
-    border: none;
-    text-align: center;
-    font-size: 1.5vw;
-    width: 100%;
-    border-radius: 10px;
-    font-weight: bold;
-    flex: 1 ;
-    border-style: solid;
-    border-color: black;
-    background-image: radial-gradient(ellipse,lightblue, #4276ee);
-}
-
+/* H3 headers */
 section h3{
     font-size: 3.5vw;
     border-bottom: 3px solid;
@@ -137,10 +131,13 @@ section h3{
     text-shadow: 0 0 10px rgba(255, 255,255, 0.3);
 }
 
+/* About me section*/
+
 .about-me-text {
-    background-image: radial-gradient(ellipse, #4276ee, lightblue);
+    background-color: var(--primary-color);
     padding-bottom: 10px;
     color: white;
+    border-bottom: 10px solid rgb(11, 11, 65);
 }
 .about-me-text p {
     width: 50%;
@@ -165,65 +162,40 @@ section h3{
     line-height: 1.5;
 }
 
-.design {
+.expertise {
     padding-bottom: 10px;
     width: 55%;
 }
-.design1 {
+
+.design {
     padding-bottom: 10px;
     width: 44%;
 }
 
-.design h4, .design1 h4 {
+.expertise h4, .design h4 {
     font-size: 45px;
     text-align: center;
 }
 
-.run-buddy img {
+.designone{
+    width:100%;
+}
+.designtwo{
+    display: flex;
+    align-items: center;
+    margin: 0 px ;
+    width: 105%;
+}
+
+.designone img{
     width: 100%;
+    border-radius: 15px;
 }
 
-.wip-content{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin:0 auto;
+.designtwo img{
+    width: 90%;
+    border-radius: 15px;
 }
-
-.wip-content img{
-    width: 30%;
-}
-
-/* .wip-content img{
-    background-color: #4276ee;
-    margin-bottom:  10px;
-    width: 40%;
-    text-align: center;
-    color: white;
-    padding-bottom:  5px;
-} */
-
-
-
-/* .run-buddy {
-    width: 50%;
-    display: flex;
-    justify-content: start;
-    text-align: left;
-} */
-
-/* .run-buddy {
-    width: 50%;
-    display: flex;
-    justify-content: start;
-    text-align: left; */
-    /* background-color: transparent;
-    background-image: url("./img/run-buddy.png");
-    background-size: cover; */
-    /* background-size: cover;
-    background-position: 80%;
-    background-attachment: fixed; 
-}*/
 
 .content2 {
     width: 100%;
@@ -233,20 +205,212 @@ section h3{
     align-items: center;
 }
 .skill {
-    background-color: #4276ee;
+    background-color: var(--primary-color);
     margin-bottom:  10px;
-    width: 45%;
+    width: 48%;
     text-align: center;
     color: white;
     flex-wrap: wrap;
     padding-bottom:  5px;
+    border-radius: 15px;
 }
 
-.design h5{
+.expertise h5{
     font-size: 22px;
 }
 
-.design p {
+.expertise p {
     padding: 5px;
     font-size: 18px;
 }
+
+/* Contact me section */
+.contact-info > * { /* *select all children elements >specifically direct children elemnts listed first */
+    flex: 1;
+    margin: 15px;
+}
+
+.contact {
+    background-color: var(--primary-color);
+    padding-bottom: 20px;
+    color: white;
+    border-top: 10px solid rgb(11, 11, 65);
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 30px;
+}
+
+
+.motto p{
+    font-style: italic;
+    text-align: justify;
+}
+
+address {
+    text-align: center;
+}
+
+address p{
+    line-height: 2;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.contact-info h4 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.resume div{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto 0 auto;
+}
+
+.resume a {
+    text-decoration: none;
+    color: black;
+}
+
+address a {
+    text-decoration: none;
+    color: skyblue;
+    font-weight: bolder;
+}
+
+button {
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    flex: 1 ;
+    border-style: solid;
+    border-color: black;
+}
+
+.resume button:hover, .resume a:hover {
+   background-image: linear-gradient(to bottom right,skyblue, rgb(11, 11, 65));
+   color: white;
+
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header{
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .about-me-text p {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    .my-work-description h4{
+        font-size: 25px;
+    }
+    .expertise {
+        width: 100%;
+    }
+    .design {
+        width: 100%;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    .motto{
+        order: 2;
+        flex: 1 100%;
+    }
+    .motto p{
+        text-align: center;
+    }
+
+    button{
+        font-size: 14px;
+    }
+}
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .about-me-text p {
+        width: 80%;
+        font-size: 15px;
+    }
+
+    .my-work-description h4{
+        font-size: 20px;
+    }
+    .skill p {
+        font-size: 15px;
+    }
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    address{
+        flex: 1 100%;
+    }
+    .motto{
+        order: 2;
+        flex: 1 100%;
+    }
+    footer h2{
+        font-size: 16px
+    }
+    footer div{
+        font-size: 13px;
+    }
+
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .contact-info {
+      text-align: center;
+    }
+    .contact-info > * {
+      flex: 0 100%;
+    }
+    .resume {
+      order: -1;
+    }
+   
+  }
+
