@@ -1,137 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />        
-        <link rel="stylesheet" href="./style.css" type="text/css">
-        <title>Leoman-Portfolio</title>
-    </head>
-    <body>
-        <header> 
-            <h1>
-                <a href="/">Leonel Mancera Pinzon</a>
-            </h1>
-            
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#about-me">About Me</a>
-                    </li>
-                    <li>
-                        <a href="#my-work">My Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me">Contact Info</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <title>Leoman-Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="/">Leonel Mancera Pinzon</a>
+      </h1>
 
-        <section class="intro">
-           <div class="intro-text">
-                <h2>Hello there!</h2>
-                <p>My name is <strong>Leonel Mancera Pinzon</strong> and I'm a Senior Data Analyst.<br> Welcome to my personal website.</p>
-            </div> 
-            <img src="./img/pic1.png" alt="Leonel's picture wearing a formal shirt and a black tie" />   
-            
-        </section>
-
-        <section id="about-me" class="about-me-text">
-            <h3>About Me</h3>
-            <p>A result-oriented individual with strong data science background and strong statistical analytics skills. Bringing more than 5 years of expertise in designing data input structure, proficiency with the prevailing analytical tools, various presentation software and statistical models useful for helping upper management make profit-pulling decisions.</p>
-           
-        </section>
-
-        <section id="my-work" class="my-work-text">
-            <h3>My Work</h3>
-            <div class="my-work-description">
-
-                <div class="design">
-                    <h4>Featured Work</h4>
-                    <div class="new-projects row" >
-                        <div class="designone col-12 align-content-center align-items-center">                           
-                                <a href="https://pets-projects.herokuapp.com/pets" target="_blank"><img src="./img/Pet-hub.png" alt="Pet-hub app picture" /></a>
-                        </div>
-                        <div class="designtwo">
-                            <div>
-                                <a href="https://leman102.github.io/weather-dashboard/" target="_blank"><img src="./img/Weather-App.png" alt="Weather app picture" /></a>
-                            </div>
-                            <div>
-                                <a href="https://vinyldude8896.github.io/Artist_Music_Tour/" target="_blank"><img src="./img/Artist-Music-Tour.png" alt="Artist Music Tour app picture" /></a>
-                            </div>
-                        </div>
-                    </div>                   
-                </div>
-
-                <div class="expertise">
-                    <h4>Expertise On</h4>
-                    <div class="content2">
-                        <div class="skill">
-                            <img src="./img/sql.png" alt="SQL icon by Icons8">
-                            <h5>SQL</h5>
-                            <p>Perform analysis to identify the necessary steps to get from a current state to a desired future state.</p>
-                        </div>
-                        <div class="skill">
-                            <img src="./img/chart.png" alt="Combo chart icon by Icons8">
-                            <h5>Data Visualizations</h5>
-                            <p>Provide an accessible way to see and understand trends, outliers, and patterns in data.</p>                            
-                        </div>
-                        <div class="skill">
-                            <img src="./img/qms.png" alt="synchronize icon by Icons8">
-                            <h5>Quality Management Systems</h5>
-                            <p>Integrate processes, procedures, and responsibilities for achieving quality policies and objectives.</p>                           
-                        </div>
-                        <div class="skill">
-                            <img src="./img/Coding.png" alt="Coding icon by Icons8">
-                            <h5>ETL Process</h5>
-                            <p>Create and manage data pipelines using programming languages such as <strong>Phyton</strong>, <strong>R</strong> and <strong>Java</strong>.</p>
-                        </div>
-                       
-                    </div>
-                </div>
+      <nav>
+        <ul>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#my-work">My Work</a>
+          </li>
+          <li>
+            <a href="#contact-me">Contact Info</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-text">
+          <p>
+            Hello there!<br />
+            This is <strong>Leo</strong>, I'm a Senior Data Analyst and
+            Full-Stack Developer.<br />
+            Welcome to my professional portfolio.
+          </p>
+        </div>
+        <img
+          src="./img/pic1.png"
+          alt="Leonel's picture wearing a formal shirt and a black tie"
+        />
+      </section>
+      <div class="accordion" id="accordionPanelsStayOpen">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button
+              id="about-me"
+              class="accordion-button "
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              About Me
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse show my-work-text"
+            aria-labelledby="panelsStayOpen-headingOne"
+          >
+            <div class="accordion-body">
+              <h2 class="about-me-description">
+                Analytically minded person with more than 5 years of experience
+                collaborating with cross-functional teams and ensuring the
+                accuracy and integrity around data and actionable insights.
+              </h2>
             </div>
-        </section>
-
-        <section id="contact-me" class="contact">
-            <h3>Contact Info</h3>
-            <div class="contact-info">
-
-                <div class="motto">
-                    <h4>Motto</h4>
-                    <p>
-                        “Data really powers everything that we do.” — Jeff Weiner
-                        <br />
-                        <br />
-                        “You can have data without information, but you cannot have information without data.” — Daniel Keys Moran
-                        <br />
-                        <br />
-                        “Passion provides purpose, but data drives decisions." — Andy Dunn
-                    </p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+            <button
+              id="my-work"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              My Work
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingTwo"
+          >
+            <div class="accordion-body">
+              <div class="my-work-description row">
+                <div class="col-12 col-lg-8">
+                  <h3>Featured Work</h3>
+                  <div>
+                    <div class="row">
+                      <div class="col-12 image-title"><a
+                        href="https://pets-projects.herokuapp.com/pets"
+                        target="_blank">
+                        Pet-Hub
+                        <a
+                          href="https://pets-projects.herokuapp.com/pets"
+                          target="_blank"
+                        >
+                          <img
+                            src="./img/Pet-hub.png" class="img-fluid img-thumbnail"
+                            alt="Pet-hub app picture"
+                          />
+                        </a>
+                      </div>
+                      <div class="col-6 d-flex">
+                        <div class="col-12 w-100 m-1 image-title"><a href="https://leman102.github.io/weather-dashboard/"
+                          target="_blank">
+                          Weather App
+                          <a
+                            href="https://leman102.github.io/weather-dashboard/"
+                            target="_blank"
+                          >
+                            <img
+                              src="./img/Weather-App.png" class="img-fluid  img-thumbnail"
+                              alt="Weather app picture"
+                            />
+                          </a>
+                        </div>
+                        <div class="col-12 w-100 m-1 image-title"><a
+                          href="https://vinyldude8896.github.io/Artist_Music_Tour/"
+                          target="_blank">
+                          Artist Music Tour
+                          <a
+                            href="https://vinyldude8896.github.io/Artist_Music_Tour/"
+                            target="_blank"
+                          >
+                            <img
+                              src="./img/Artist-Music-Tour.png" class="img-fluid img-thumbnail"
+                              alt="Artist Music Tour app picture"
+                            />
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4 ">
+                  <h3 class="col-12">Expertise On</h3>
+                  <div class=" col-12 d-flex flex-wrap justify-content-center align-content-center ">
+                    <div class="col-5 skill">
+                      <img src="./img/sql.png" alt="SQL icon by Icons8" />
+                      <h4>SQL</h4>
+                      <p>
+                        Perform analysis to identify the necessary steps to get
+                        from a current state to a desired future state.
+                      </p>
+                    </div>
+                    <div class="col-5 skill">
+                      <img
+                        src="./img/chart.png"
+                        alt="Combo chart icon by Icons8"
+                      />
+                      <h4>Data Visualizations</h4>
+                      <p>
+                        Provide an accessible way to see and understand trends,
+                        outliers, and patterns in data.
+                      </p>
+                    </div>
+                    <div class="col-5 skill">
+                      <img
+                        src="./img/qms.png"
+                        alt="synchronize icon by Icons8"
+                      />
+                      <h4>Quality Management Systems</h4>
+                      <p >
+                        Integrate processes, procedures, and responsibilities
+                        for achieving quality policies and objectives.
+                      </p>
+                    </div>
+                    <div class="col-5 skill">
+                      <img src="./img/Coding.png" alt="Coding icon by Icons8" />
+                      <h4>ETL Process</h4>
+                      <p>
+                        Create and manage data pipelines using programming
+                        languages such as <strong>Phyton</strong>,
+                        <strong>R</strong> and <strong>Java</strong>.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+            <button
+              id="contact-me"
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              Contact Info
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="panelsStayOpen-headingThree"
+          >
+            <div class="accordion-body">
+              <div class="contact-info row">
+                <div class="col-md-12 col-lg-4 motto">
+                  <h3>Motto</h3>
+                  <p>
+                    “Data really powers everything that we do.” — Jeff Weiner
+                    <br />
+                    <br />
+                    “You can have data without information, but you cannot have
+                    information without data.” — Daniel Keys Moran
+                    <br />
+                    <br />
+                    “Passion provides purpose, but data drives decisions." —
+                    Andy Dunn
+                  </p>
                 </div>
 
-                <address>
-                    <h4>Contact Me</h4>
-                    <p>P: 437-974-2734<br/>
-                    E: <a href="mailito:leonelmancerap@gmail.com">leonelmancerap@gmail.com</a>
-                    <br/>Toronto, ON<br/>    
-                </p>
+                <address class="col-md-12 col-lg-4 address">
+                  <h3>Contact Me</h3>
+                  <p>
+                    P: 437-974-2734<br />
+                    E:
+                    <a href="mailito:leonelmancerap@gmail.com"
+                      >leonelmancerap@gmail.com</a
+                    >
+                    <br />Toronto, ON<br />
+                  </p>
                 </address>
 
-                <div class="resume">
-                    <h4>Check My Resume</h4>
-                    <div>
-                        <button><a href="https://docs.google.com/document/d/1RDfjCf0U_oAhaKCUwCT5aD_HyQUahShJ_2i8XTT4mSg/edit#heading=h.hj06txyot8v" target="_blank" > 📄 View Resume </a></button>
-                    </div>
+                <div class="col-md-12 col-lg-4 resume">
+                  <h3>My Resume</h3>
+                  <div>
+                    <a
+                      href="https://docs.google.com/document/d/1RDfjCf0U_oAhaKCUwCT5aD_HyQUahShJ_2i8XTT4mSg/edit#heading=h.hj06txyot8v"
+                      target="_blank">
+                      <button>
+                        📄 View Resume
+                      </button>
+                    </a>
+                  </div>
                 </div>
-            </div>
-        </section>
-        
-    </body>
 
-    <footer>
-        <h2>Thanks for checking my portfolio.</h2>
-        <div>&copy; 2022 Leoman</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer >
+      <h2 >Thanks for checking my portfolio.</h2>
+      <div >&copy; 2022 Leoman</div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+      integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

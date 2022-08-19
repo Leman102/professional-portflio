@@ -121,96 +121,49 @@ footer {
 }
 
 /* H3 headers */
-section h3{
-    font-size: 3.5vw;
+h3 {
+    font-size: 3.0vw;
     border-bottom: 3px solid;
     padding-top: 10px;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
-    width: 50%;
-    text-shadow: 0 0 10px rgba(255, 255,255, 0.3);
+    width: 60%;
+    text-shadow: 0 0 5px rgb(159, 157, 157);
+}
+
+.accordion-button{
+    font-size: 3.5vw;
 }
 
 /* About me section*/
-
-.about-me-text {
-    background-color: var(--primary-color);
-    padding-bottom: 10px;
-    color: white;
-    border-bottom: 10px solid rgb(11, 11, 65);
-}
-.about-me-text p {
-    width: 50%;
+.about-me-description{
+    width: 65%;
     margin: 3.5px auto 3.5px auto;
     line-height: 1.5;
     display: block;
     justify-content: center;
-    font-size: 22px;
+    font-size: 2.3vw;
     text-align: center;
-    font-weight: bold;
 }
 
 /* my work section */
 
-.my-work-description {
-    display: flex;
-    justify-content: space-between;
-    width: 98%;
-    font-size: 22px;
-    flex-wrap: wrap;
-    margin: 0 auto 0 auto;
-    line-height: 1.5;
+.image-title a{
+    font-size: 2.3vw;
+    font-weight: bolder;
+    color: navy; 
+    text-decoration: none;
 }
 
-.expertise {
-    padding-bottom: 10px;
-    width: 40%;
+.img-thumbnail {
+    box-shadow: 3px 2px#888888;
 }
 
-.design {
-    padding-bottom: 10px;
-    width: 55%;
-    margin-left: 10px;
-}
-
-.expertise h4, .design h4 {
-    font-size: 45px;
-    text-align: center;
-}
-
-
-.designtwo{
-    display: flex;
-    align-items: center;
-    margin: 0 px ;
-    width: 100%;
-}
-
-.designone img{
-    width: 90%;
-    border-radius: 15px;
-    margin: 0 auto;
-}
-
-.designtwo img{
-    width: 90%;
-    border-radius: 15px;
-    margin: 5px;
-    height: 150px;
-}
-
-.content2 {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
 .skill {
     background-color: var(--primary-color);
-    margin-bottom:  10px;
-    width: 48%;
+    margin: 0 10px 4px 0px;
+    width: 45%;
     text-align: center;
     color: white;
     flex-wrap: wrap;
@@ -218,20 +171,15 @@ section h3{
     border-radius: 15px;
 }
 
-.expertise h5{
-    font-size: 22px;
+h4{
+    font-size: 2vw;
+    text-shadow: 0 0 5px rgb(159, 157, 157);
 }
 
-.expertise p {
-    padding: 5px;
-    font-size: 18px;
-}
+
 
 /* Contact me section */
-.contact-info > * { /* *select all children elements >specifically direct children elemnts listed first */
-    flex: 1;
-    margin: 15px;
-}
+
 
 .contact {
     background-color: var(--primary-color);
@@ -241,34 +189,33 @@ section h3{
 }
 
 .contact-info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin: 0 30px;
 }
 
 
 .motto p{
     font-style: italic;
-    text-align: justify;
+    text-align: center;
+    font-size:  1.5vw;
 }
 
 address {
     text-align: center;
 }
 
-address p{
+.address p{
     line-height: 2;
-    font-style: normal;
     font-weight: bold;
+    font-size:  1.5vw;
 }
 
-.contact-info h4 {
-    font-size: 26px;
-    margin-bottom: 20px;
-    text-align: center;
-}
+address a {
+    text-decoration: none;
+    color: navy;
+    font-weight: bolder;
 
+    font-size:  1.5w;
+}
 
 
 .resume div{
@@ -281,18 +228,13 @@ address p{
 .resume a {
     text-decoration: none;
     color: black;
+    border-radius: 10px;
 }
 
-address a {
-    text-decoration: none;
-    color: skyblue;
-    font-weight: bolder;
-}
 
 button {
     padding: 15px 10px;
     text-align: center;
-    font-size: 20px;
     border-radius: 10px;
     font-weight: bold;
     flex: 1 ;
@@ -306,114 +248,8 @@ button {
 
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
-    header{
-        padding-bottom: 0;
-        justify-content: center;
-        position: relative;
+@media screen and (min-width: 1600px) {
+        .address p, .motto p{
+            font-size: calc(16px + 6 * ((100vw - 320px) / 680));  
     }
-    header h1 {
-        width: 100%;
-        text-align: center;
-    }
-    header nav ul {
-        width: 100%;
-        justify-content: center;
-    }
-    header nav ul li a {
-        font-size: 20px;
-    }
-    footer h2, footer div {
-        text-align: center;
-        width: 100%;
-    }
-    .about-me-text p {
-        width: 80%;
-        font-size: 18px;
-    }
-
-    .my-work-description h4{
-        font-size: 25px;
-    }
-    .expertise {
-        width: 100%;
-    }
-    .design {
-        width: 100%;
-    }
-
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin: 0 auto;
-        width: 80%;
-        text-align: center;
-    }
-
-    .motto{
-        order: 2;
-        flex: 1 100%;
-    }
-    .motto p{
-        text-align: center;
-    }
-
-    button{
-        font-size: 14px;
-    }
-}
-  
-  /* MEDIA QUERY FOR TABLETS AND SMALLER */
-  @media screen and (max-width: 768px) {
-    .about-me-text p {
-        width: 80%;
-        font-size: 15px;
-    }
-
-    .my-work-description h4{
-        font-size: 20px;
-    }
-    .skill p {
-        font-size: 15px;
-    }
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin: 0 auto;
-        width: 100%;
-        align-items: center;
-        text-align: center;
-    }
-    address{
-        flex: 1 100%;
-    }
-    .motto{
-        order: 2;
-        flex: 1 100%;
-    }
-    footer h2{
-        font-size: 16px
-    }
-    footer div{
-        font-size: 13px;
-    }
-
   }
-  
-  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-  @media screen and (max-width: 575px) {
-    .contact-info {
-      text-align: center;
-    }
-    .contact-info > * {
-      flex: 0 100%;
-    }
-    .resume {
-      order: -1;
-    }
-   
-  }
-
